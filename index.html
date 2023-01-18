@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação de times</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Desejo montar um sistema em que é possível adicionar à uma lista um jogador com nome, número e posição, remover o mesmo da lista dada o seu número. -->
+    <h1>Escalação oficial de times da NBA</h1>
+    <hr>
+    <h2>Adicionar um jogador</h2>
+    <form action="#" id="form-1">
+        <label for="playerName">Nome do jogador:</label>
+        <input type="text" id="playerName" placeholder="Insira o nome ..." autocomplete="off">
+        <br><br>
+        <label for="playerNumber">Número do jogador:</label>
+        <input type="text" id="playerNumber" placeholder="Insira o número..." autocomplete="off">
+        <br><br>
+        <label for="playerPosition">Posição do jogador:</label>
+        <input type="text" id="playerPosition" placeholder="Insira a posição..." autocomplete="off">
+        <br>
+        <button onclick="addPlayer()" class="button">Adicionar</button>
+    </form>
+    <hr>
+    <h2>Remover um jogador</h2>
+    <form action="#" id="form-2">
+        <label for="playerToRemove">Número do jogador à ser removido:</label>
+        <input type="text" id="playerToRemove" placeholder="Insira o número ...">
+        <button onclick="removePlayer()" class="button">Remover</button>
+    </form>
+    <hr>
+    <h2>Lista oficial do Time</h2>
+    <ul id="teamList">
+    </ul>
+</body>
+</html>
